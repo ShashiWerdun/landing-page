@@ -1,18 +1,19 @@
-body {
+*:not(head) {
     display: flex;
+}
+
+body {
     flex-direction: column;
     margin: 0px;
 }
 
 .header {
-    display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #1f2937;
 }
 
 .header ul {
-    display: flex;
     gap: 30px;
     list-style-type: none;
 }
@@ -23,20 +24,18 @@ body {
 }
 
 .header a,
-.intro p {
+#intro p {
     font-size: 18px;
     color: #e5e7eb;
     text-decoration: none;
 }
 
-.intro div {
-    display: flex;
+#intro div {
     flex-direction: column;
     align-items: flex-start;
 }
 
-.intro {
-    display: flex;
+#intro {
     justify-content: center;
     gap: 40px;
     align-items: center;
@@ -44,39 +43,36 @@ body {
     padding: 80px 0px 80px 0px;
 }
 
-.intro .main-text {
+#intro .main-text {
     color: #f9faf8;
     font-size: 48px;
     font-weight: 900;
     margin: 0px;
 }
 
-.intro img {
+#intro img {
     width: auto;
     height: 200px;
 }
 
-.details {
-    display: flex;
+#details {
     flex-direction: column;
     align-items: center;
     padding: 30px 40px 30px 40px;
 }
 
-.details ul {
-    display: flex;
+#details ul {
     margin: 0px 20px 0px 20px;
     gap: 40px;
 }
 
-.details h2 {
+#details h2 {
     font-size: 36px;
     font-weight: 900;
     color: #1f2937;
 }
 
-.details ul div {
-    display: flex;
+#details ul div {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -84,7 +80,7 @@ body {
     font-weight: bold;
 }
 
-.details img {
+#details img {
     width: auto;
     height: 200px;
     border-radius: 20px;
@@ -93,8 +89,7 @@ body {
     border-color: #3882f6;
 }
 
-.testimonial {
-    display: flex;
+#testimonial {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -102,22 +97,21 @@ body {
     padding: 50px 200px 50px 200px;
 }
 
-.testimonial .quote {
+#testimonial .quote {
     font-size: 36px;
     font-style: italic;
     color: #1f2937;
     margin: 0px;
 }
 
-.testimonial .author {
+#testimonial .author {
     align-self: flex-end;
     font-weight: bold;
     font-size: 30px;
     margin: 0px;
 }
 
-.sign-up {
-    display: flex;
+#sign-up {
     justify-content: space-evenly;
     background-color: #3882f6;
     color: #e5e7eb;
@@ -126,26 +120,25 @@ body {
     border-radius: 20px;
 }
 
-.sign-up div {
-    display: flex;
+#sign-up div {
     flex-direction: column;
     justify-content: center;
 }
 
-.sign-up button {
+#sign-up button {
     align-self: center;
     border-width: 3px;
     border-style: solid;
     border-color: whitesmoke;
 }
 
-.sign-up .main-text {
+#sign-up .main-text {
     font-size: 28px;
     font-weight: bold;
     margin: 0px;
 }
 
-.sign-up p {
+#sign-up p {
     font-size: 20px;
     margin: 0px;
 }
@@ -162,7 +155,6 @@ button {
 
 .footer {
     background-color: #1f2937;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
